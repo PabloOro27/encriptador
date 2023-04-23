@@ -1,0 +1,122 @@
+:root{
+    --lg: 24px;
+    --md: 20px;
+    --sm: 14px; 
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);
+    --dark-blue: #0A3871;
+    --gray: #D8DFE8; 
+    --text-gray: #343A40;
+    --ligth-blue: #E8E8E8; 
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--ligth-blue);
+    display: flex;
+    justify-content: space-between;
+}
+/* CLASE DE INACTIV */
+.inactiv{
+    display: none;
+}
+/* lado izquierdo  */
+.left-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.left-part figure img{
+    width: 40px;
+    height: 60px;
+}
+#texto-ingreso{
+    border: none; 
+    background-color: transparent;
+    text-align: left;
+    margin: 40px 0 32px 100px;
+    font-size: var(--lg);
+    color: var(--dark-blue);
+    width: 800px;
+    box-sizing: border-box;
+    height: 500px;
+    resize: none;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.botones button{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: var(--md);
+    margin: 12px;
+    cursor: pointer;
+}
+.primary-button{
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+.secondary-button{
+    background-color: var(--gray);
+    color: var(--dark-blue);
+}
+.primary-button:hover{
+    color: #57C5B6;
+}
+.secondary-button:hover{
+    color: #57C5B6;
+}
+/* LADO DERECHO */
+.rigth-part{
+    background-color: var(--white);
+    width: 340px;
+    height: 699px;
+    margin: 40px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.rigth-part figure img{
+    width: 300px;
+    height: 250px;
+}
+.rigth-part figure{
+    margin-bottom: 40px;
+}
+.rigth-part h1{
+    font-size: var(--md);
+    text-align: center;
+    width: 280px;
+    color: var(--text-gray);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.rigth-part h2{
+    font-size: var(--sm);
+    text-align: center;
+    width: 280px;
+    color: var(--text-gray);
+    font-weight: 300;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 780px) {
+    .rigth-part figure{
+        display: none;
+    }
+    body{
+        flex-direction: column;
+    }
+    .rigth-part{
+        width: 725px;
+        height: 135px;
+        margin: 20px;
+        justify-content: flex-start;
+        padding-top: 35px;
+    }
+}
