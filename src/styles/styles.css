@@ -118,7 +118,7 @@ body{
 }
 .message span{
     text-align: justify;
-    font-size: var(--sm);
+    font-size: 16px;
     color: var(--dark-blue);
     font-weight: 350;
 }
@@ -129,6 +129,10 @@ body{
     border-radius: 12px;
     background-color: transparent;
     border: 2px solid var(--dark-blue);
+    cursor: pointer;
+}
+.message button:hover{
+    color: #57C5B6;
 }
 
 /* MEDIA QUERY */
@@ -149,11 +153,4 @@ body{
     #copy{
         margin-top: 35px;
     }
-    /* .rigth-part .not-message{
-        width: 725px;
-        height: 135px;
-        margin: 20px;
-        justify-content: flex-start;
-        padding-top: 35px;
-    } */
 }
